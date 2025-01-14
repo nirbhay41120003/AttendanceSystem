@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance System</h1>
+        <button id="capture-btn">Capture Image for Dataset</button>
+        <button id="train-btn">Train the Model</button>
+        <button id="run-btn">Run and Save Attendance</button>
+        <button id="check-btn">Check Attendance Log</button>
+        
+        <div id="output"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
